@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GridItem">
+
+    <TextView
+        android:id="@+id/griddata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apple"
+        android:textSize="50dp"
+        android:layout_marginTop="105dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/griddata"
+        android:src="@drawable/apple"
+        android:layout_marginTop="27dp"/>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:hint="99"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textSize="24sp"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="27dp"
+        android:layout_marginStart="80dp"/>
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:hint="99"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textSize="24sp"
+        android:layout_below="@id/imageView"
+        android:layout_toEndOf="@id/editText1"
+        android:layout_marginTop="27dp"
+        android:layout_marginStart="20dp"/>
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:hint="99"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textSize="24sp"
+        android:layout_below="@id/imageView"
+        android:layout_toEndOf="@id/editText2"
+        android:layout_marginTop="27dp"
+        android:layout_marginStart="20dp"/>
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:hint="99"
+        android:inputType="number"
+        android:maxLength="2"
+        android:textSize="24sp"
+        android:layout_below="@id/imageView"
+        android:layout_toEndOf="@id/editText3"
+        android:layout_marginTop="27dp"
+        android:layout_marginStart="20dp"/>
+
+
+    <TextView
+        android:id="@+id/betResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Números Aleatórios"
+        android:textSize="24sp"
+        android:layout_below="@id/editText4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/betButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_below="@id/betResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"/>
+
+</RelativeLayout>
